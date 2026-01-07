@@ -142,7 +142,7 @@ python semantic_image_search/backend/ingestion.py \
 
 ```bash
 # Start FastAPI backend (defaults to http://localhost:8000)
-python semantic_image_search/backend/main.py
+uvicorn semantic_image_search.backend.main:app --reload
 ```
 
 ### 5. Run Web UI
